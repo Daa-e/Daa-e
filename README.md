@@ -2,8 +2,9 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&size=26&pause=1200&color=F7F7F7&center=true&vCenter=true&width=800&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C+%EC%8B%A0%EC%9E%85+%EA%B0%9C%EB%B0%9C%EC%9E%90+%EA%B9%80%EC%A4%80%ED%83%9C%EC%9E%85%EB%8B%88%EB%8B%A4;Unreal+Engine+%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8+%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9E%85%EB%8B%88%EB%8B%A4)](https://git.io/typing-svg)
 
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:skdidlak123@gmail.com)
-[![Tistory](https://img.shields.io/badge/Tistory-FF5D01?style=flat-square&logo=tistory&logoColor=white)](https://daae1.tistory.com/)
+[<img src="https://cdn.simpleicons.org/gmail/D14836" width="32" height="32" valign="middle"/> skdidlak123@gmail.com](mailto:skdidlak123@gmail.com)
+&nbsp;&nbsp;|&nbsp;&nbsp;
+[<img src="https://cdn.simpleicons.org/tistory/FF5D01" width="32" height="32" valign="middle"/> daae1.tistory.com](https://daae1.tistory.com/)
 
 </div>
 
