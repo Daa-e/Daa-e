@@ -2,7 +2,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+%EA%B9%80%EC%A4%80%ED%83%9C;Unreal+Engine+Network%2FMultiplayer+Programmer;C%2B%2B+%C2%B7+EOS+%C2%B7+Listen+Server)](https://git.io/typing-svg)
 
-📧 [skdidlak123@gmail.com](mailto:skdidlak123@gmail.com) &nbsp;|&nbsp; 📝 [TIL 블로그](https://daae1.tistory.com/)
+[skdidlak123@gmail.com](mailto:skdidlak123@gmail.com) &nbsp;|&nbsp;  [TIL 블로그](https://daae1.tistory.com/)
 
 </div>
 
