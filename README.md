@@ -26,15 +26,21 @@ EOS 기반 세션 생성·검색·참가 · 리슨 서버 구조 · 서버 권�
 
 ### Projects
 
-**Hopscotch** — 3D 멀티플레이 영역 점유 캐주얼 게임 · Unreal Engine 5 · EOS
+**Hopscotch** - 3D 멀티플레이 영역 점유 캐주얼 게임 · Unreal Engine 5 · EOS
 → [github.com/NBcampUnrealTrack/8th-Team17-CH4-Project](https://github.com/NBcampUnrealTrack/8th-Team17-CH4-Project)
+
+![Hopscotch Title Screen](assets/hopscotch-title.png)
+
 - 라운드제 매치 플로우(카운트다운 → 진행 → 결과 → 다음 라운드/시리즈 종료), 타일 점유 기반 점수·순위 집계, 베스트 오브 N 시리즈 승리 판정 구현
 - EOS 로그인(정식 로그인 + DevAuthTool 크리덴셜), 로비 캐릭터/색상 선택 및 세션 간 저장 구현
 - UMG 기반 Login → Main → Create/Find Room → Lobby → Setting 전체 UI 플로우 구현, 방장(리슨 서버 호스트)에게만 Start 버튼이 보이도록 권한 기반 UI 처리
 - 로비 캐릭터/색상 선택, Ready 상태 동기화, 해상도·볼륨 등 설정 적용/취소 UI 구현
 
-**Crosswalk** — 4인 협동 파티 게임 (도색 작업 + 차량 회피·패링) · Unreal Engine 5 · EOS/Steam
+**Crosswalk** - 4인 협동 파티 게임 (도색 작업 + 차량 회피·패링) · Unreal Engine 5 · EOS/Steam
 → [github.com/NBcampUnrealTrack/8th-Team11-Final-Project](https://github.com/NBcampUnrealTrack/8th-Team11-Final-Project)
+
+![Crosswalk Title Screen](assets/crosswalk-title.png)
+
 - EOS 온라인 세션 생명주기(로그인, 방 생성/검색/참가/삭제) 구현, Steam은 EOS Steam Identity Provider로 연동 준비
 - 서버 권위 기반 패링 판정 구현 및 검증 - 다운(히트락) 상태에서도 패링이 승인되던 서버 측 재검증 누락 버그 발견·수정
 - 차량 위치를 Transform 대신 차선 진행 거리 하나만 복제하는 dead reckoning 구조로 개선해 리플리케이션 끊김 해결
