@@ -2,7 +2,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&size=26&pause=1200&color=F7F7F7&center=true&vCenter=true&width=800&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C+%EC%8B%A0%EC%9E%85+%EA%B0%9C%EB%B0%9C%EC%9E%90+%EA%B9%80%EC%A4%80%ED%83%9C%EC%9E%85%EB%8B%88%EB%8B%A4;Unreal+Engine+%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8+%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9E%85%EB%8B%88%EB%8B%A4)](https://git.io/typing-svg)
 
-<img src="https://cdn.simpleicons.org/gmail/D14836" width="32" height="32" valign="middle"/> skdidlak123@gmail.com
+<img src="https://cdn.simpleicons.org/gmail/D14836" width="32" height="32" valign="middle"/> `skdidlak123@gmail.com`
 &nbsp;&nbsp;|&nbsp;&nbsp;
 [<img src="https://cdn.simpleicons.org/tistory/FF5D01" width="32" height="32" valign="middle"/> daae1.tistory.com](https://daae1.tistory.com/)
 
@@ -47,9 +47,3 @@ EOS 기반 세션 생성·검색·참가 · 리슨 서버 구조 · 서버 권�
 - 피격 넉백·래그돌 시작 위치 및 복귀 위치의 서버-클라이언트 동기화 구현 (실측 기반으로 여러 라운드에 걸쳐 반복 개선)
 
 <br>
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daa-e&layout=compact&hide_border=true&theme=transparent" />
-
-</div>
