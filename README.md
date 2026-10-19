@@ -1,16 +1,18 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&size=26&pause=1200&color=F7F7F7&center=true&vCenter=true&width=800&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C+%EC%8B%A0%EC%9E%85+%EA%B0%9C%EB%B0%9C%EC%9E%90+%EA%B9%80%EC%A4%80%ED%83%9C%EC%9E%85%EB%8B%88%EB%8B%A4;Unreal+Engine+%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8+%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9E%85%EB%8B%88%EB%8B%A4)](https://git.io/typing-svg)
+# 김준태
 
-<img src="https://cdn.simpleicons.org/gmail/D14836" width="32" height="32" valign="middle"/> `skdidlak123@gmail.com`
+게임 클라이언트 프로그래머 · Unreal Engine · C++
+
+<img src="https://cdn.simpleicons.org/gmail/D14836" width="20" height="20" valign="middle"/> `skdidlak123@gmail.com`
 &nbsp;&nbsp;|&nbsp;&nbsp;
-[<img src="https://cdn.simpleicons.org/tistory/FF5D01" width="32" height="32" valign="middle"/> daae1.tistory.com](https://daae1.tistory.com/)
+[<img src="https://cdn.simpleicons.org/tistory/FF5D01" width="20" height="20" valign="middle"/> daae1.tistory.com](https://daae1.tistory.com/)
 
 </div>
 
 ---
 
-멀티플레이 게임을 서버 권위 로직·세션 동기화부터 로그인/로비 같은 UMG 기반 UI·게임 플로우까지 직접 구현해 왔습니다. 문제가 생기면 설정·구조 단계까지 원인을 추적해서 해결하는 과정을 중요하게 생각합니다.
+멀티플레이 상태를 서버 기준으로 맞춥니다. 세션과 서버 권위 판정, 래그돌 위치 보정, 복제 구조를 C++로 구현하고, 직접 측정한 값과 코드로 정리합니다.
 
 <br>
 
@@ -20,30 +22,49 @@
 
 **Multiplayer**
 
-EOS 기반 세션 생성·검색·참가 · 리슨 서버 구조 · 서버 권위 판정 및 리플리케이션 설계
+Steam 세션(로그인, 방 생성·검색·참가) · 리슨 서버 · 서버 권위 판정 · 복제와 보간 · 프레임 예산 측정
 
 <br>
 
 ### Projects
 
-**Hopscotch** - 3D 멀티플레이 영역 점유 캐주얼 게임 · Unreal Engine 5 · EOS
-→ [github.com/NBcampUnrealTrack/8th-Team17-CH4-Project](https://github.com/NBcampUnrealTrack/8th-Team17-CH4-Project)
-
-![Hopscotch Title Screen](assets/hopscotch-title.png)
-
-- 라운드제 매치 플로우(카운트다운 → 진행 → 결과 → 다음 라운드/시리즈 종료), 타일 점유 기반 점수·순위 집계, 베스트 오브 N 시리즈 승리 판정 구현
-- EOS 로그인(정식 로그인 + DevAuthTool 크리덴셜), 로비 캐릭터/색상 선택 및 세션 간 저장 구현
-- UMG 기반 Login → Main → Create/Find Room → Lobby → Setting 전체 UI 플로우 구현, 방장(리슨 서버 호스트)에게만 Start 버튼이 보이도록 권한 기반 UI 처리
-- 로비 캐릭터/색상 선택, Ready 상태 동기화, 해상도·볼륨 등 설정 적용/취소 UI 구현
-
-**Crosswalk** - 4인 협동 파티 게임 (도색 작업 + 차량 회피·패링) · Unreal Engine 5 · EOS/Steam
+**CrossWalk** · 2026.08 - 2026.10 · 6인 · UE 5.8 · C++ · Steam
+차량이 오가는 도로에서 1~4명이 도구를 나눠 들고 횡단보도를 완성하는 온라인 협동 파티 게임입니다.
 → [github.com/NBcampUnrealTrack/8th-Team11-Final-Project](https://github.com/NBcampUnrealTrack/8th-Team11-Final-Project)
 
-![Crosswalk Title Screen](assets/crosswalk-title.png)
+![CrossWalk](assets/crosswalk-title.png)
 
-- EOS 온라인 세션 생명주기(로그인, 방 생성/검색/참가/삭제) 구현, Steam은 EOS Steam Identity Provider로 연동 준비
-- 서버 권위 기반 패링 판정 구현 및 검증 - 다운(히트락) 상태에서도 패링이 승인되던 서버 측 재검증 누락 버그 발견·수정
-- 차량 위치를 Transform 대신 차선 진행 거리 하나만 복제하는 dead reckoning 구조로 개선해 리플리케이션 끊김 해결
-- 피격 넉백·래그돌 시작 위치 및 복귀 위치의 서버-클라이언트 동기화 구현 (실측 기반으로 여러 라운드에 걸쳐 반복 개선)
+- 온라인 세션과 로비(Steam), 서버 권위 패링 판정, 래그돌과 차량 위치 동기화, 날씨 상태, 프레임 예산 측정을 담당했습니다.
+- 래그돌 위치가 서버와 최대 2528cm까지 벌어지던 문제를 pelvis를 서버 값으로 따라가게 바꿔, 15회 연속 피격 테스트에서 52~73cm로 줄였습니다.
+- 패링 판정을 인터페이스로 분리해, 서버가 피격·싱크홀 낙하·착석·통 소지 상태를 다시 검증하게 했습니다.
+- EOS 병행을 걷어내고 Steam 하나로 정리했고, 로비 필터와 입장 플래그 문제를 보정했습니다.
+
+<br>
+
+**TinyPaw Adventures** · 2026.06 - 2026.07 · 6인 · UE 5 · C++
+2~4인이 전기 울타리를 피하며 타일을 점령하는 3D 멀티플레이 땅따먹기 게임입니다.
+→ [github.com/NBcampUnrealTrack/8th-Team17-CH4-Project](https://github.com/NBcampUnrealTrack/8th-Team17-CH4-Project)
+
+![TinyPaw Adventures](assets/hopscotch-title.png)
+
+- 세션 생성·검색·참가를 GameInstanceSubsystem으로 분리하고, UI는 델리게이트로만 결과를 받게 했습니다.
+- 서버가 확정한 로비 상태와 Ready 검증, PlayerState 복제 기반 플레이어 외형 동기화를 구현했습니다.
+- 동점, 0점, 재접속 상황에서도 로비와 랭킹이 유지되게 했습니다.
+
+<br>
+
+**Dune Survivor** · 2026.05 · 6인 · UE 5 · C++
+모래 언덕 유적에서 몰려오는 적을 상대하는 1인칭 생존 로그라이트 게임입니다.
+→ [github.com/NBcampUnrealTrack/8th-Team17-CH3-Project](https://github.com/NBcampUnrealTrack/8th-Team17-CH3-Project)
+
+- 캐릭터 스킬과 RPG 투사체 범위 피해, 포탈 기반 스테이지 진행, 캐릭터 스탯·이동·대시를 구현했습니다.
+
+<br>
+
+**Net Ragdoll Sync** · 개인 프로젝트 · UE 5.8 · C++ 플러그인
+CrossWalk에서 겪은 래그돌 위치 문제를 일반화한 서버 권위 래그돌 동기화 플러그인입니다. Fab 출시를 준비하고 있습니다.
+
+- 일어서는 순간의 수평 위치 튐을 동기화 사용 시 2~3cm, 미사용 시 20~47cm로 측정했습니다(리슨 서버, 조건별 래그돌 10건).
+- 비행 중 궤적이 로컬 물리보다 정확하지는 않으며, 약 50~60ms 늦게 따라갑니다.
 
 <br>
