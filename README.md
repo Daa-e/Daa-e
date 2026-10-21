@@ -12,17 +12,11 @@
 
 ---
 
-멀티플레이 상태를 서버 기준으로 맞춥니다. 세션과 서버 권위 판정, 래그돌 위치 보정, 복제 구조를 C++로 구현하고, 직접 측정한 값과 코드로 정리합니다.
-
 <br>
 
 **Stack**
 
 <img src="https://skillicons.dev/icons?i=cpp,unrealengine,git,github" />
-
-**Multiplayer**
-
-Steam 세션(로그인, 방 생성·검색·참가) · 리슨 서버 · 서버 권위 판정 · 복제와 보간 · 프레임 예산 측정
 
 <br>
 
